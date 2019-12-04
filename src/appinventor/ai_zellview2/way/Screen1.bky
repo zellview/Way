@@ -1,0 +1,112 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="!L5y/5C)fLASrlI9bU:Z" x="-503" y="-327">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonShow" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonShow</field>
+    <statement name="DO">
+      <block type="component_set_get" id="`B43j[=0GY-|Oah=%roa">
+        <mutation component_type="LocationSensor" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="LocationSensor1"></mutation>
+        <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+        <field name="PROP">Enabled</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="pPgxoanB41f/v.4ddhw}">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id=",OSjT!JH8/gj}K9|Skex">
+            <mutation component_type="Button" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="ButtonShow"></mutation>
+            <field name="COMPONENT_SELECTOR">ButtonShow</field>
+            <field name="PROP">Enabled</field>
+            <value name="VALUE">
+              <block type="logic_false" id="V*USx03=*Po-minR+jLa">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="%7t~E?@R`L6Be6@k)w^{">
+                <mutation component_type="Button" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="ButtonShow"></mutation>
+                <field name="COMPONENT_SELECTOR">ButtonShow</field>
+                <field name="PROP">BackgroundColor</field>
+                <value name="VALUE">
+                  <block type="color_gray" id="$Z~==Cf+X97]p[@E4m.S">
+                    <field name="COLOR">#888888</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="p.x?s*9eP}V9(]g/MMk(" x="-502" y="-189">
+    <mutation component_type="LocationSensor" is_generic="false" instance_name="LocationSensor1" event_name="LocationChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+    <statement name="DO">
+      <block type="component_method" id="dQe3nxV9q8qcPv^2cE%$">
+        <mutation component_type="Map" method_name="PanTo" is_generic="false" instance_name="Map1"></mutation>
+        <field name="COMPONENT_SELECTOR">Map1</field>
+        <value name="ARG0">
+          <block type="lexical_variable_get" id="f_0VKO{knL_~IIE|YOG6">
+            <mutation>
+              <eventparam name="latitude"></eventparam>
+            </mutation>
+            <field name="VAR">latitude</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lexical_variable_get" id="V_bp7e-pfae@FLs[jI|k">
+            <mutation>
+              <eventparam name="longitude"></eventparam>
+            </mutation>
+            <field name="VAR">longitude</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="component_set_get" id="7Lxg/]+ytf]LcKMdo(E2">
+            <mutation component_type="Map" set_or_get="get" property_name="ZoomLevel" is_generic="false" instance_name="Map1"></mutation>
+            <field name="COMPONENT_SELECTOR">Map1</field>
+            <field name="PROP">ZoomLevel</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="y=4^PY)2~d{2r-oPi;2A">
+            <mutation component_type="LocationSensor" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="LocationSensor1"></mutation>
+            <field name="COMPONENT_SELECTOR">LocationSensor1</field>
+            <field name="PROP">Enabled</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="-pMWWxgTCK5_-IO%o*HP">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="m)~}gx]B|t|dVVfqx,3e">
+                <mutation component_type="Button" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="ButtonShow"></mutation>
+                <field name="COMPONENT_SELECTOR">ButtonShow</field>
+                <field name="PROP">Enabled</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="NPply7Jt~vu%sn/DT|sI">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="E3rK$VY^=r]2q9dtT-oK">
+                    <mutation component_type="Button" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="ButtonShow"></mutation>
+                    <field name="COMPONENT_SELECTOR">ButtonShow</field>
+                    <field name="PROP">BackgroundColor</field>
+                    <value name="VALUE">
+                      <block type="color_gray" id="p-X}13TnEZV~OAPq^Yi|">
+                        <field name="COLOR">#33ff33</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="186" language-version="27"></yacodeblocks>
+</xml>
